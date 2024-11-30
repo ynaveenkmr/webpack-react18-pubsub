@@ -3,7 +3,8 @@ import PubSub from 'pubsub-js';
 
 const App = () => {
   React.useEffect(() => {
-    PubSub.publish('MY TOPIC', 'hello world! data used in App1');
+    let text2App1 = <u>'This text is from App2'</u>;
+    PubSub.publish('MY TOPIC', text2App1);
   }, []);
 
   return (

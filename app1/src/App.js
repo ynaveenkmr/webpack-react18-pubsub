@@ -28,8 +28,7 @@ const App = () => {
         }}
       >
         <h1>App1</h1>
-        <span>This text is from App2 --> </span>
-        {dt}
+        <span>{dt}</span>
       </div>
       <Suspense fallback={'loading...'}>
         <RemoteApp />
